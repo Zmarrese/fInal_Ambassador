@@ -1,0 +1,618 @@
+<!--Ambassador Project
+    Author: Zach Marrese
+    School: UW Parkside
+    Class:  Art 377 Interactive Design
+    Prof:   Dan Martin
+    Description: This is the Menu page for the Ambassador's revisioned website. 
+    Contains the full descriptive menu, a link to the home and take n bake sections, and the descritpion of the menu item selected iE: Pizza tab-->
+    <!DOCTYPE html>
+
+    <html lang="en">
+    
+    <head>
+        <title>Menu | Ambassador</title>
+        <!--<link rel="icon" type='" href="">-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <script type="text/javascript" src="javaScript/javaS.js"></script>
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com"> 
+        <link rel="stylesheet" href="https://use.typekit.net/cdr2iev.css">
+
+    </head>
+    
+    <body>
+    <!--Consistent header amongst all pages will copy paste between pages
+    Font: Old English Text MT. Will be Gitan Latin if fails-->
+        <!--Font: Gitan Latin-->
+        <div class = "font_container">
+
+            <div class = "header_container">
+                <div class = "ambassador_Title"><a href="index.html">AMBASSADOR</a></div>
+                <div class = "ambassador_Subtitle">Proudly Owned by the Rossi Family Since 1965</div>
+            </div>
+
+            <a class="takebake_link"href="ambassador_takenbake.html"><br><br>Want Ambassador pizza at home? <br>Try Take-n-Bake!</a><br><br>
+
+            <!-- Tab links -->
+            <div class="tab">
+                <button class="tablinks" onclick="openMenu(event, 'Appetizer')">Appetizer</button>
+                <button class="tablinks" onclick="openMenu(event, 'Pizza')">Pizza</button>
+                <button class="tablinks" onclick="openMenu(event, 'Pasta')">Pasta</button>
+                <button class="tablinks" onclick="openMenu(event, 'Sandwiches')">Sandwiches</button>
+                <button class="tablinks" onclick="openMenu(event, 'Salads')">Salads</button>
+                <button class="tablinks" onclick="openMenu(event, 'Drinks')">Drinks</button>
+            </div>
+  
+            <!-- Tab content -->
+            <div id="Appetizer" class="tabcontent">
+                <div class = "menu_Header">APPETIZERS</div>
+                <div class = "menu_SubHeader"></div>
+                <div class = "tab_Grid">
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">NACHOS </div>
+                        <div class = "menu_Item_Description">Basket of Corn Tortilla Chips with 8oz Hot Nacho Cheese </div>
+                        <div class = "menu_Item_Price">$4<br>Homemade Salsa 8oz $1<br>
+                            Sour Cream 4oz $.80<br>
+                            Jalapenos 4oz $.80<br>
+                            Basket of Chips $2</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">BAKED POTATO SHELLS</div>
+                        <div class = "menu_Item_Description">Filled with Sautéed Italian Onion Sausage , Wisconsin Cheddar and Parmesan Cheese, Served with Sour Cream.<br>Allow 15 minutes.</div>
+                        <div class = "menu_Item_Price">$6</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">BAKED CHICKEN WINGS</div>
+                        <div class = "menu_Item_Description">Spicy Buffalo Hot Sauce<br>Allow 15 minutes.</div>
+                        <div class = "menu_Item_Price">$7<br>Ranch or Blue Cheese 4oz. $1</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">FRESH BAKED GARLIC TOAST BASKET</div>
+                        <div class = "menu_Item_Description"></div>
+                        <div class = "menu_Item_Price">$3<br>
+                            House-made Ranch Dressing $1<br>
+                            Slow Cooked House-made Spaghetti Sauce $2<br>
+                            House-made Pizza Sauce $1</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">SAVORY ITALIAN MEATBALLS</div>
+                        <div class = "menu_Item_Description">topped with Shredded Parmesan Cheese and served with House-made Pizza Sauce</div>
+                        <div class = "menu_Item_Price">Small (6) $4<br>
+                            Large (10) $7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">BEEF or BEAN TACO</div>
+                        <div class = "menu_Item_Description">House-made Tostada Beef, Shredded Lettuce, Wisconsin Cheddar Cheese, Diced Tomatoes, and Tostada Hot Sauce.</div>
+                        <div class = "menu_Item_Price">Hard Corn Tortilla $2<br>
+                            Soft Flour Tortilla $3</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">BURRITO</div>
+                        <div class = "menu_Item_Description">Soft Flour Tortilla filled with House-made Refried Beans and Tostada Beef, Wisconsin Cheddar Cheese, Black Olives and Tostada Hot Sauce.</div>
+                        <div class = "menu_Item_Price">$4<br>
+                            Sour Cream or Nacho Cheese $1</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">NACHO GRANDE</div>
+                        <div class = "menu_Item_Description">Our delicious House-made Tostado Beef served on Corn Tortilla Chips and topped with Shredded Cheddar Cheese, Lettuce, Tomato and Black Olives. Served with a side of Hot Nacho Cheese.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+
+                </div>
+            </div>
+            <!--PIZZA TAB-->
+            <div id="Pizza" class="tabcontent" style="display:block">
+                <div class = "menu_Header">Pizza</div>
+                <div class = "menu_SubHeader">Every Great Pizza Starts with Our Thin Crisp Crust, House-made for over 50 years!</div>
+                <div class = "tab_Grid">
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">TOSTADA</div>
+                        <div class = "menu_Item_Description">Award Winning Tostada Beef layered over House-made Pizza Sauce and Baked with Wisconsin White Colby Cheese, Topped with Freshly Shredded Lettuce, Tomatoes, Wisconsin Cheddar Cheese and House-made Tostada Hot Sauce.</div>
+                        <div class = "menu_Item_Price">$12/$14/$17</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">B.L.T. PIZZA</div>
+                        <div class = "menu_Item_Description">A Generous amount of Smoked Bacon layered over Salad Dressing, Baked with Wisconsin White Colby Cheese.  Topped with Freshly Shredded Lettuce and Tomatoes.</div>
+                        <div class = "menu_Item_Price">$12/$15/$18</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">VEGETARIAN PIZZA</div>
+                        <div class = "menu_Item_Description">Tomatoes, Zucchini, Carrots, Onions, Broccoli, Wisconsin Cheddar & White Colby Cheeses, and Garlic Olive Oil layered over House-made Pizza Sauce</div>
+                        <div class = "menu_Item_Price">$12/$14/$17</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">GREEK</div>
+                        <div class = "menu_Item_Description">Fresh Spinach, Tomatoes, Black & Green Olives, Feta Cheese, Oregano and Garlic Basil Olive Oil layered over Wisconsin White Colby Cheese.</div>
+                        <div class = "menu_Item_Price">$12/$15/$19</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">GARLIC CHICKEN PIZZA</div>
+                        <div class = "menu_Item_Description">Tender Chopped Chicken Breast, Broccoli, Basil, Oregano, Garlic Olive Oil layered over Wisconsin White Colby Cheese.</div>
+                        <div class = "menu_Item_Price">$14/$16/$19</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">LOBSTER PIZZA</div>
+                        <div class = "menu_Item_Description">A Generous amount of Lobster Sensation, Tomatoes, Parsley, Garlic Olive Oil layered over Wisconsin White Colby Cheese. Served with Lemon Wedges.</div>
+                        <div class = "menu_Item_Price">$15/$19/$23</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">PESTO PIZZA</div>
+                        <div class = "menu_Item_Description">Tender Chopped Chicken Breast, Green Peppers, Onions, Bacon and Wisconsin Cheddar Cheese layered over Wisconsin White Colby Cheese and our House-made Spicy Aioli Sauce.</div>
+                        <div class = "menu_Item_Price">$14/$16/$19</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">QUESADILLA PIZZA</div>
+                        <div class = "menu_Item_Description">Tender Chopped Chicken Breast, Green Peppers, Onions, Bacon and Wisconsin Cheddar Cheese layered over Wisconsin White Colby Cheese and our House-made Spicy Aioli Sauce.</div>
+                        <div class = "menu_Item_Price">$14/$16/$19</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">BBQ CHICKEN PIZZA</div>
+                        <div class = "menu_Item_Description">Tender Chopped Chicken Breast, Banana Peppers, Sliced Red Onions, and Wisconsin White Colby Cheese layered over Tangy Barbeque Sauce, topped with Wisconsin Cheddar Cheese.</div>
+                        <div class = "menu_Item_Price">$14/$16/$19</div>
+                    </div>
+
+                    <div class = "menu_Item_Span">
+                        <div class = "menu_Item_Header">Build Your Own Ambassador Pizza!</div>
+                        <div class = "menu_Item_Description">Made with our Homemade Thin Crisp Crust</div>
+                        <div class = "menu_Item_Price">$9/$11/$13<br><br>add ingredients listed below to our basic cheese<br>
+                            Sausage, Pepperoni, Ham, Smoked Bacon, Anchovies, or Feta Cheese
+                            <br>$1/$2/$3<br>
+                            Shrimp or Marinated Chicken<br>
+                            $3/$4/$5<br>
+                            Spinach, Mushrooms, Broccoli, Zucchini, Pineapple, Diced Jalapenos, Black Olives, Green Olives, Tomato, Green Pepper, Onions, Chopped Garlic, or Banana Peppers
+                            <br>$1/$1/$2 </div>
+                    </div>
+                </div>
+
+                
+            </div>
+  
+            <div id="Pasta" class="tabcontent">
+                <div class = "menu_Header">Pasta</div>
+                <div class = "menu_SubHeader">Made with our Homemade Sauce using Meat, seven different Spices, topped with a dash of Grated Parmesan and served with Fresh Baked Garlic Toast.</div>
+                <div class = "tab_Grid">
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">LASAGNA</div>
+                        <div class = "menu_Item_Description">Allow 15 minutes<br>Herbed Ricotta Cheese & our Homemade Italian Meat Sauce layered with Wisconsin Cheddar, Mozzarella, & White Colby Cheese. Served with Garlic Toast.</div>
+                        <div class = "menu_Item_Price">$11</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">RAVIOLI</div>
+                        <div class = "menu_Item_Description">Italian Beef, Carnalized Onions & Herbed Ricotta Cheese Stuffed Ravioli topped with our Homemade Italian Meat Sauce and Grated Parmesan.  Served with Garlic Toast.</div>
+                        <div class = "menu_Item_Price">Small (3) $4 <br>Large (5) $8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">SPAGHETTI</div>
+                        <div class = "menu_Item_Description">Slow Cooked Homemade Italian Meat Sauce topped with Grated Parmesan and served with Fresh Baked Garlic Toast.</div>
+                        <div class = "menu_Item_Price">Sm. $6   Lg. $8<br>
+                            with Savory Italian Meatballs<br>
+                            Sm. $7    Lg. $10<br>
+                            * Meatless Sauce Available Upon Request</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">PESTO PASTA</div>
+                        <div class = "menu_Item_Description">Spaghetti tossed with Pesto Sauce, Fresh Spinach, and Sun Dried Tomatoes. Served with Garlic Toast.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Span">
+                        <div class = "menu_Item_Header">SPECIALTY PASTA</div>
+                        <div class = "menu_Item_Description">Spaghetti mixed with a fresh Olive Oil pan of Garlic, Basil, Tomatoes and Parmesan Cheese. Served with Garlic Toast.</div>
+                        <div class = "menu_Item_Price">$6 <br>Want to add meat to the Specialty Pasta or Pesto Pasta?
+                            choose from the following:<br>
+                            Sliced Chicken Breast $2<br>
+                            Norwegian Salmon $4<br>
+                            Lobster Sensation $5</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Sandwiches" class="tabcontent">
+                <div class = "menu_Header">SANDWICHES</div>
+                <div class = "menu_SubHeader">Ambassador Submarine Sandwiches
+                    <br>Served on our Hot Crusty Italian Bread</div>
+                <div class = "tab_Grid">
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">Traditional</div>
+                        <div class = "menu_Item_Description">Cotto Salami and Bologna, Sliced Wisconsin White Colby Cheese, Tomatoes, Onions, Lettuce and Salad Dressing.</div>
+                        <div class = "menu_Item_Price">8 in......$6    16 in.......$12    24 in......$18</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">Three Cheese </div>
+                        <div class = "menu_Item_Description">Fresh Sliced Wisconsin Cheddar & White Colby, with Swiss, Tomatoes, Onions, Lettuce and Salad Dressing.</div>
+                        <div class = "menu_Item_Price">8 in......$6    16 in......$12    24 in.....$18</div>
+                    </div>
+                    <div></div>
+                    <div class = "menu_SubHeader_Span">Ambassador Sub<br>
+
+                        Specialty Sandwiches<br>
+                        
+                        Served with Kettle Cooked Chips and a Pickle<br>
+                        
+                        All Sandwiches are served on our Hot Crusty Italian Bread (split-top wheat available upon request).</div>
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">REUBEN</div>
+                        <div class = "menu_Item_Description">Hot Corned Beef, Creamy Swiss Cheese, Zesty Dressing with Spiced Sauerkraut.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">YODELER</div>
+                        <div class = "menu_Item_Description">Hot Corned Beef, Shredded Lettuce, and Sliced Tomatoes topped with Zesty Dressing.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">ROAST BEEF</div>
+                        <div class = "menu_Item_Description">A Simple Sandwich of Tender Roast Beef served with a side of Au Jus.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">YORKSHIRE BEEF</div>
+                        <div class = "menu_Item_Description">Tender Roast Beef with Fresh Sliced Wisconsin Cheddar Cheese and a side of Au Jus.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">RACHEL</div>
+                        <div class = "menu_Item_Description">Tender Roast Beef, Creamy Swiss Cheese and Spiced Sauerkraut.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">HAM & SWISS</div>
+                        <div class = "menu_Item_Description">Fresh Sliced Premium Lean Deli Ham, Creamy Swiss Cheese, Shredded Lettuce, and Salad Dressing.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">CUDIGHI</div>
+                        <div class = "menu_Item_Description">A Classic Upper-Peninsula version of this traditional Italian Sausage.  House-made for over 50 years!</div>
+                        <div class = "menu_Item_Price">with House-made Pizza Sauce & Wisconsin White Colby $7
+                            <br>with Mustard & Onions $7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">ITALIAN MEATBALL</div>
+                        <div class = "menu_Item_Description">6 Large Savory Meatballs Stewed in an Italian Tomato Sauce, topped with Mozzarella Cheese.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">TURKEY</div>
+                        <div class = "menu_Item_Description">Tender Sliced Whole Turkey Breast, Shredded Lettuce and Salad Dressing.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">TURKEY DELUXE</div>
+                        <div class = "menu_Item_Description">Tender Sliced Whole Turkey Breast, Shredded Lettuce, Tomatoes, and Zesty Dressing.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">MEAT LOAF</div>
+                        <div class = "menu_Item_Description">Homemade with Lean Ground Beef, Served Cold with Lettuce and Salad Dressing.</div>
+                        <div class = "menu_Item_Price">$6</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">AMBO MAC</div>
+                        <div class = "menu_Item_Description">Our Famous House-Made Meatloaf warmed in Au-Jus and Served with Lettuce, Tomatoes, Onions, Wisconsin Cheddar Cheese and Zesty Dressing.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">TUNA</div>
+                        <div class = "menu_Item_Description">Fresh Made Salad of Celery, Onion, & Tuna with Shredded Lettuce and Salad Dressing.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">TUNA SUPREME</div>
+                        <div class = "menu_Item_Description">Fresh Made Salad of Celery, Onion, & Tuna with Shredded Lettuce, Tomatoes, Sliced Wisconsin Cheddar Cheese, and Zesty Dressing.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">AMBASSADOR CLUB</div>
+                        <div class = "menu_Item_Description">Tender Sliced Turkey Breast, Lean Ham, Wisconsin Cheddar Cheese, Tomatoes, Lettuce and Salad Dressing.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">PESTO CHICKEN SANDWICH</div>
+                        <div class = "menu_Item_Description">Tender Sliced Chicken Breast and Tomatoes baked in Fresh Garlic Olive Oil, topped with Pesto and Romaine Lettuce.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">CHICKEN SANDWICH</div>
+                        <div class = "menu_Item_Description">Tender Sliced Chicken Breast Baked in Garlic Basil Olive Oil, topped with Lettuce, Tomatoes, and Salad Dressing.</div>
+                        <div class = "menu_Item_Price">$8<br>
+                            Add Cheddar Cheese $</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">MEDITERRANEAN CHICKEN</div>
+                        <div class = "menu_Item_Description">Tender Sliced Chicken Breast Baked and served with Fresh Spinach, Tomatoes, and Feta Cheese.</div>
+                        <div class = "menu_Item_Price">$8<br>
+                            substitute Norwegian Salmon $10</div>
+                    </div>
+                </div>
+            </div>
+  
+            <div id="Salads" class="tabcontent">
+                <div class = "menu_Header">SALADS</div>
+                <div class = "menu_SubHeader">A Meal In A Bowl • Please, No Substitutions<br>
+                    Salads can be made with fresh Baby Spinach or Fresh Cut Romaine Lettuce for an additional $2<br></div>
+                    <div class = "menu_SubHeader_Salads">House Dressings (served on the side): Homemade Ranch, Homemade French, Homemade Italian, Caesar, Blue Cheese, Thousand Island, Balsamic Vinegar, Red Wine Vinegar & Oil, and FF Raspberry Vinaigrette.  </div>
+                <div class = "tab_Grid">
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">HOUSE SALAD</div>
+                        <div class = "menu_Item_Description">Fresh Cut Iceberg Lettuce, Tomatoes, Onions, Wisconsin Cheddar Cheese and Croutons.</div>
+                        <div class = "menu_Item_Price">$4</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">SIDE CAESAR SALAD</div>
+                        <div class = "menu_Item_Description">Freshly Chopped Romaine Lettuce, Croutons, Onions, & Tomatoes topped with Shredded Parmesan Cheese & Caesar Dressing. 
+                            <br>Served with Fresh Baked Garlic Toast</div>
+                        <div class = "menu_Item_Price">$5</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">CAESAR SALAD</div>
+                        <div class = "menu_Item_Description">Freshly Chopped Romaine Lettuce, Croutons, Onions, & Tomatoes topped with Shredded Parmesan Cheese & Caesar Dressing.
+                            <br>Served with Fresh Baked Garlic Toast</div>
+                        <div class = "menu_Item_Price">$7<br>
+                            add Garlic Herb Grilled Chicken Breast $2<br>
+                            add Wild Alaskan Salmon $4
+                       </div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">CHEF’S SALAD</div>
+                        <div class = "menu_Item_Description">Fresh Cut Iceberg Lettuce, Lean Premium Deli Ham, Tender Sliced Whole Turkey, Tomatoes, Onions, Hard-boiled Egg, & Wisconsin Cheddar Cheese.
+                            <br>Served with Fresh Baked Garlic Toast & Choice of Dressing.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">GARDEN SALAD (Vegetarian)</div>
+                        <div class = "menu_Item_Description">Fresh Cut Iceberg Lettuce, Tomatoes, Onions, Green Pepper, Black Olives, Hard-boiled Egg, and Wisconsin Cheddar Cheese.  <br>Served with Fresh Baked Garlic Toast and Choice of Dressing.</div>
+                        <div class = "menu_Item_Price">$7</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">TACO SALAD</div>
+                        <div class = "menu_Item_Description">Fresh Cut Iceberg Lettuce topped with our specialty House made Tostada Beef, Wisconsin Cheddar Cheese, Tomatoes, Black Olives and Corn Chips. 
+                            <br>Served with Tostada Hot Sauce, Sour Cream and Salsa.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">ITALIAN BEEF VINAIGRETTE</div>
+                        <div class = "menu_Item_Description">Fresh Cut Iceberg Lettuce with Thinly Shaved Tender Roast Beef, Italian Green Beans, Onions, Tomatoes and Black Olives. <br>Served with Fresh Baked Garlic Toast and Italian Dressing.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">ITALIAN TUNA SALAD</div>
+                        <div class = "menu_Item_Description">Fresh Cut Iceberg Lettuce with chunks or Light Tuna, Onions, Tomatoes, Green Beans, Yellow Wax Beans & Kidney Beans. <br>Served with Fresh Baked Garlic Toast and Italian Dressing.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">GREEK SALAD</div>
+                        <div class = "menu_Item_Description">Fresh Cut Iceberg Lettuce with Onions, Tomatoes, Black Olives, Green Peppers, Marinated Cucumbers and Crumbled Feta Cheese.  <br>Served with Fresh Baked Garlic Toast and Italian Dressing.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Drinks" class="tabcontent">
+                <div class = "menu_Header">COCKTAILS</div>
+                <div class = "menu_SubHeader">25 ounce Spirits<br>
+                    (Strawberry Daiquiri and Pina Colada have an optional smaller 10 oz.)</div>
+                <div class = "tab_Grid">
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">PINA COLADA (Blended)</div>
+                        <div class = "menu_Item_Description">Rum, Pineapple Juice and Coconut Cream</div>
+                        <div class = "menu_Item_Price">Fish Bowl 25 oz. $9<br>
+                            Smaller sized 10 oz. $4</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">SCORPION</div>
+                        <div class = "menu_Item_Description">Exotic Blend of Pineapple and Orange Juice, Gin, Rum and Creme de Almond</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">PIRATE’S COVE</div>
+                        <div class = "menu_Item_Description">Spiced Rum, Blue Curacao, Lime Juice and Squirt.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">AMBASSADOR LONG ISLAND</div>
+                        <div class = "menu_Item_Description">Whiskey, Rum, Vodka, Triple Sec, Lemon Juice and Coke</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">LONG ALASKAN</div>
+                        <div class = "menu_Item_Description">Whiskey, Rum, Vodka, Triple Sec, Blue Curacao, Coke and Lemon Juice.</div>
+                        <div class = "menu_Item_Price">$9</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">FROSTY COOLER</div>
+                        <div class = "menu_Item_Description">Lime Vodka, Gin, Sprite and Lemon Juice.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">QUALUDE</div>
+                        <div class = "menu_Item_Description">Vodka, Southern Comfort, Creme de Almond,Triple Sec, Orange Juice and Sprite.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">PURPLE RAIN</div>
+                        <div class = "menu_Item_Description">Creme de Almond, Blue Curacao, Rum, Lime Juice and Squirt.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">OCEAN BREEZE</div>
+                        <div class = "menu_Item_Description">Rum, Vodka, Triple Sec, Cranberry Juice and Orange Juice.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">ZOMBIE</div>
+                        <div class = "menu_Item_Description">Rum, Apricot Brandy, Pineapple Juice</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">MAITAI </div>
+                        <div class = "menu_Item_Description">Tropical Blend of Rum, Triple Sec, Sugar and Pineapple Juice.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">RASPBERRY LEMONADE</div>
+                        <div class = "menu_Item_Description">Whiskey, Triple Sec, Raspberry Schnapps, Sprite and Lemon Juice.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">VACATION?</div>
+                        <div class = "menu_Item_Description">Whiskey, Peach Schnapps, Pineapple Juice, and Squirt</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">SWEET TART</div>
+                        <div class = "menu_Item_Description">Vodka, Blue Curacao, Raspberry Schnapps, Triple Sec, Cranberry Juice, Sprite and Squirt.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">STRAWBERRY DAIQUIRI (Blended)</div>
+                        <div class = "menu_Item_Description">Strawberries blended with Rum and Lemon Juice</div>
+                        <div class = "menu_Item_Price">Fish Bowl 25 oz. $9<br>
+                            Smaller sized 10 oz. $4</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">BLUE HAWAIIAN (Blended)</div>
+                        <div class = "menu_Item_Description">Blue Curacao, Rum, Pineapple Juice and Coconut Cream.</div>
+                        <div class = "menu_Item_Price">Fish Bowl 25 oz. $9<br>
+                            Smaller sized 10 oz. $4</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">BLUE MOTORCYCLE</div>
+                        <div class = "menu_Item_Description">Vodka, Blue Curacao, Triple Sec, Lemon, Lime and Squirt.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">CABANA</div>
+                        <div class = "menu_Item_Description">Vodka, Rum, Creme de Banana, Orange Juice, Pineapple Juice, Grenadine</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">SNAKE JEWELS</div>
+                        <div class = "menu_Item_Description">Vodka, Triple Sec, Amaretto, Lime Juice, Cranberry Juice and Sprite.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">FUN ON THE BEACH</div>
+                        <div class = "menu_Item_Description">Raspberry Schnapps, Melon Liqueur, Vodka, Orange Juice and Cranberry Juice.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">SUPERIOR TIDE</div>
+                        <div class = "menu_Item_Description">Rum, Blue Curacao, Triple Sec, Melon Liqueur, Lime Juice and Sprite.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">TIJUANA TAXI</div>
+                        <div class = "menu_Item_Description">Tequila, Blue Curacao, Triple Sec, Lime Juice and Squirt.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">JAMAICAN TEN SPEED</div>
+                        <div class = "menu_Item_Description">Melon Liquer, Coconut Rum, Vodka, Creme de Banana, Pineapple Juice and Milk</div>
+                        <div class = "menu_Item_Price">$9</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">CAR CRASH</div>
+                        <div class = "menu_Item_Description">Sloe Gin, Creme de Almond, Southern Comfort, Rum and Sprite.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">LYNCHBURG LEMONADE</div>
+                        <div class = "menu_Item_Description">Jack Daniel’s, Triple Sec, Lemon Juice and Sprite.</div>
+                        <div class = "menu_Item_Price">$9</div>
+                    </div>
+
+                    <div class = "menu_Item_Container">
+                        <div class = "menu_Item_Header">BULLFROG</div>
+                        <div class = "menu_Item_Description">Southern Comfort, Melon Liqueur, Lemon Juice, Sugar and Squirt.</div>
+                        <div class = "menu_Item_Price">$8</div>
+                    </div>
+                </div>
+            </div>
+
+            
+            
+            <!--Footer will be consistent across all three pages.-->
+            <div class = "footer_container">
+                <div>HOURS AND OTHER INFORMATION</div>
+                <div>ADDRESS:</div>
+                <div>PHONE (906)482-5054</div>
+                <div>Monday-Thursday 11am-9pm</div>
+                <div>126 Sheldon Ave.</div>
+                <div>SOCIAL MEDIA:</div>
+                <div>Friday & Saturday 11am-9pm</div>
+                <div>Houghton, MI 49931</div>
+                <div><a class= "foot_link"href="https://www.facebook.com/ambohoughton">//www.facebook.com/ambohoughton</a></div>
+                <div>Sunday 4pm-9pm</div>
+            </div>
+        </div>
+    </body>

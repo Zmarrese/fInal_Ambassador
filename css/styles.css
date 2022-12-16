@@ -1,0 +1,231 @@
+@font-face {
+    font-family: 'old_londonregular';
+    src: url('fonts/oldlondon-webfont.woff2') format('woff2'),
+         url('fonts/oldlondon-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/* GENERAL CLASSES FOR ALL PAGES */
+html{
+    background-color: #973b26;
+}
+a:link {
+    color: #738a7d;
+    text-decoration: none;
+
+}
+a:visited{
+    color: #6A8174;
+    text-decoration: none;
+}
+.font_container{
+    font-family: gitan, sans-serif;
+}
+.header_container{
+    margin-top: -20px;
+    font-family: 'old_londonregular';
+    font-size: 25px;
+    text-align: center;
+    color: #6A8174;
+    padding-top: -10px;
+    padding-bottom: -10px;
+}
+.footer_container{
+    display: grid;
+    grid-template-columns: 6fr 6fr 6fr;
+    grid-template-rows: 6fr 6fr 6fr 6fr;   
+    color: white;
+}
+a.foot_link{
+    color: white;
+    text-decoration: underline;
+}
+a.foot_link:visited{
+    color: white;
+    text-decoration: underline;
+}
+a.foot_link:hover{
+    color:#6A8174;
+    cursor: pointer;
+}
+
+.ambassador_Title{
+    font-size: 70pt;
+    margin-top: -10px;
+}
+.ambassador_Subtitle{
+    font-size: 50pt;
+    margin-top: -10px;
+}
+
+/*LANDING PAGE SPECIFIC CLASSES*/
+.body_container{
+    display: grid;
+    grid-template-columns: 6fr 6fr 6fr 6fr 6fr 6fr 6fr;
+    align-items: center;
+    
+}
+
+.img_pos{
+    text-align: center;
+    z-index: 9999;
+}
+.history_container{
+    font-size: 20px;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 6fr 6fr;
+    grid-template-rows: 6fr 6fr 4fr;
+    color: white;
+    line-height: 125%;
+}
+.history_head{
+    padding-top: 5px;
+}
+.poem_head{
+    text-align: center;
+}
+.history_body{
+    padding-right: 30px;
+    margin-right: 15px;
+}
+.poem_body{
+    margin-top: -150px;
+    text-align: center;
+}
+/*MENU PAGE SPECIFIC CLASSES*/
+/* Style the tab */
+.tab {
+    overflow: hidden;
+    background-color: #973b26;
+}
+  
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+  
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: rgba(217, 89, 46, 0.996);
+}
+  
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: gray;
+}
+
+.tablinks{
+    font-size: 15pt;
+    color: white;
+    font-size: 30pt;
+    background-color: #6A8174;
+    margin-bottom: 10px;
+}
+  
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid black;
+    
+}
+.tab_Grid{
+    display: grid;
+    grid-template-columns: 6fr 6fr 6fr;
+    grid-template-rows: 5fr 5fr 5fr 5fr;   
+    grid-row: auto;
+    color: white;
+    gap: 25px 25px;
+}
+
+.menu_Header{
+    color: white;
+    font-size: 30pt;
+}
+
+.menu_SubHeader{
+    color: white;
+    font-size: 15pt;
+    margin-top: 10px;
+    margin-bottom: 15px;
+
+}
+
+.menu_SubHeader_Salads{
+    color: white;
+    font-size: 10pt;
+}
+.menu_Item_Container{
+    border: 3px solid;
+    border-color: white;
+    border-radius: 25px;
+    background-color: rgb(72, 54, 54);
+    opacity: 75%;
+    color: white;
+    padding: 3%;
+}
+.menu_Item_Header{
+    font-size: 15pt;
+    margin-bottom: 3px;
+}
+
+.menu_Item_Description{
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.menu_Item_Span{
+    border: 3px solid;
+    border-color: #7c2e1d;
+    border-radius: 25px;
+    background-color: gray;
+    opacity: 75%;
+    color: black;
+    padding: 3%;
+    grid-column: span 3;
+}
+.menu_SubHeader_Span{
+    color: white;
+    font-size: 15pt;
+    grid-column: span 3;
+    grid-row: auto;
+}
+/*TAKE-N-BAKE SPECIFIC CLASSES*/
+.takebake_container{
+    color: white;
+    line-height: 2;
+    font-size: 20px;
+}
+.takebake_indentation{
+    margin-left: 10pt;
+}
+.takebake_link{
+    font-size: 30px;
+    margin-top: 15px;
+    
+}
+a.takebake_link{
+    color: white;
+    text-decoration: underline;
+    
+}
+a.takebake_link:visited{
+    color: white;
+    text-decoration: underline;
+}
+a.takebake_link:hover{
+    color: #738a7d;
+    cursor: pointer;
+}
+.testGrid{
+    display: grid;
+    grid-template-columns: 3fr;
+}
